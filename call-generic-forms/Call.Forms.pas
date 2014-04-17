@@ -6,7 +6,7 @@ uses
   Vcl.Forms, System.SysUtils;
 
 type
-  TCallForms = record
+  TCallForms = class
     class procedure ShowModal<F: TForm>;  overload; static;
     class procedure ShowModal<F: TForm>( var pForm: F );  overload; static;
   end;
